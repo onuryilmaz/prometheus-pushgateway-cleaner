@@ -4,5 +4,5 @@ WORKDIR /go/src/github.com/onuryilmaz/prometheus-pushgateway-cleaner/cmd
 RUN GOOS=linux go build -o prometheus-pushgateway-cleaner
 
 FROM alpine
-COPY --from=builder /go/src/github.com/onuryilmaz/prometheus-pushgateway-cleaner/cmd/prometheus-pushgateway-cleaner /prometheus-pushgateway-cleaner
+COPY --from=builder /go/src/github.com/onuryilmaz/prometheus-pushgateway-cleaner/cmd/prometheus-pushgateway-cleaner /usr/bin/prometheus-pushgateway-cleaner
 ENTRYPOINT ["./prometheus-pushgateway-cleaner"]
