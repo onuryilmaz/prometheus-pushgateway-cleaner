@@ -83,7 +83,7 @@ func (p *PushgatewayCleaner) Run() error {
 	logrus.Info("Pushgateway Cleaner")
 	logrus.Info("----------------------------")
 	logrus.Info("Address:\t", p.address)
-	logrus.Info("TTL:\t\t", p.ttl.String())
+	logrus.Info("TTL:\t", p.ttl.String())
 	logrus.Info("Dry Run:\t", p.dryRun)
 	logrus.Info("----------------------------")
 
