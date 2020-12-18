@@ -1,7 +1,7 @@
 # Prometheus Pushgateway Cleaner
 # :fire: :hourglass_flowing_sand: :recycle:
 
-It is a tool to clear old metrics from [Prometheus Pushgateway](https://github.com/prometheus/pushgateway).
+It is a tool to delete old metrics from [Prometheus Pushgateway](https://github.com/prometheus/pushgateway).
 
 ## Why?
 
